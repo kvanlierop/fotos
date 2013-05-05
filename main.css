@@ -1,0 +1,52 @@
+body{
+	font-family:Helvetica, sans-serif;
+	color:#444;
+	margin:1px;padding:0;
+}
+*{
+	margin:0px;padding:0;
+}
+h1{
+	color:#444;
+}
+a:link, a:visited{
+	color:#444;
+}
+
+nav ul{
+	padding:0;
+	list-style:none;
+}
+aside, main, footer{
+	display:block;
+}
+main{
+	width:80%;
+	max-width:800px;
+	margin:0px auto;
+}
+main *{
+	max-width:100%;
+}
+aside{
+	width:20%;
+	float:left;
+	position:fixed;
+}
+footer{
+	z-index:2;
+}
+@media (max-width:800px){
+	aside{
+		float:none;
+		position:relative;
+		width:100%;
+	}
+	main{
+		width:100%;
+	}
+	main *{
+		width:100%;
+		max-width:100%;
+	}
+}
