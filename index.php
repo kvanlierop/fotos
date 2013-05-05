@@ -15,7 +15,7 @@
 				$dirs = scandir("./");
 				foreach($dirs as $dir){
 					if(is_dir($dir) && substr($dir, 0,1) != "."){
-						echo "<li><a href='?b=".$dir."'>".$dir."</a></li>";
+						echo "<li><a href='?b=".rawurlencode($dir)."'>".$dir."</a></li>";
 					}
 				}
 				?>
@@ -33,7 +33,7 @@
 				}
 			}
 		}else{
-			foreach(glob($_GET['b']. "/*") as $dir){
+			foreach(glob(rawurldecode($_GET['b']). "/*") as $dir){
 				echo "<img src='".$dir."' />";
 			}
 		}
