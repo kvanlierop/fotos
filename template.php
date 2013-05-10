@@ -16,7 +16,7 @@
 		</nav>
 	</aside>
 	<main>
-		<?php echo $imgs; ?>
+		<?php echo $content; ?>
 		<footer>
 			&copy; by you;
 		</footer>
