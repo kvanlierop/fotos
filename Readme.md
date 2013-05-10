@@ -6,6 +6,7 @@
 * Create Folders in the directory of `index.php` to create categories
 * Drop your pictures in your Folders
 * You're done!
+
 ## Templating
 * Put your template in template.php
 * Replace the title of your page with `<?php echo $title; ?>`
